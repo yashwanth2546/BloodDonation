@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/background"
+    android:layout_height="match_parent"
+    tools:context=".auth.RecipientRegistrationActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:focusableInTouchMode="true"
+        android:background="@color/white"
+        android:elevation="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/appicon"/>
+
+            <TextView
+                android:text="Recipient Registration"
+                android:textColor="@color/background"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_margin="2dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Sign up to continue"
+                android:textColor="@color/background"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/profile"
+                    app:civ_border_width="2dp"
+                    android:layout_gravity="center"
+                    app:civ_border_color="@color/background"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Your Name"
+                        android:imeOptions="actionNext"
+                        android:drawablePadding="10dp"
+                        android:inputType="text"
+                        android:importantForAutofill="no"
+                        android:drawableStart="@drawable/ic_person"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter ID Number"
+                        android:inputType="number"
+                        android:drawablePadding="10dp"
+                        android:imeOptions="actionNext"
+                        android:importantForAutofill="no"
+                        android:drawableStart="@drawable/ic_card"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Your Number"
+                        android:imeOptions="actionNext"
+                        android:drawablePadding="10dp"
+                        android:importantForAutofill="no"
+                        android:inputType="number"
+                        android:drawableStart="@drawable/ic_phone"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Spinner
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:id="@+id/blodGroupsSpinner"
+                    android:background="@color/white"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:entries="@array/bloodgroups"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Your Email"
+                        android:imeOptions="actionNext"
+                        android:drawablePadding="10dp"
+                        android:importantForAutofill="no"
+                        android:inputType="textEmailAddress"
+                        android:drawableStart="@drawable/ic_baseline_email_24"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Your Password"
+                        android:imeOptions="actionDone"
+                        android:drawablePadding="10dp"
+                        android:importantForAutofill="no"
+                        android:inputType="number"
+                        android:drawableStart="@drawable/ic_password"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <Button
+                    android:id="@+id/registerButton"
+                    android:text="Sign Up Now"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    android:background="@drawable/button_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/backButton"
+                    android:text="Already registered? Sign In"
+                    android:layout_marginTop="15dp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</ScrollView>
