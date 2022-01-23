@@ -6,10 +6,12 @@
 </a>
 
 <center>
-<img src="screenshots/1.png"  width="350" height=auto>
+<img src="img/1.png"  width="350" height=auto>
 
-<img src="screenshots/2.png" width="350" height=auto>
+<img src="img/2.png" width="350" height=auto>
 
-<img src="screenshots/3.png"  width="350" height=auto>
+<img src="img/3.png"  width="350" height=auto>
+
+<img src="img/4.png"  width="350" height=auto>
 
 </center>
