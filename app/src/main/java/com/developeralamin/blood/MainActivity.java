@@ -92,9 +92,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 String type = snapshot.child("type").getValue().toString();
-                if (type.equals("donor")){
+                if (type.equals("donor")) {
                     readRecipients();
-                }else {
+                } else {
                     readDonors();
                 }
             }
@@ -139,16 +139,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 //
 //                    }
 
-                    if (snapshot.hasChild("profilepictureurl")){
+                    if (snapshot.hasChild("profilepictureurl")) {
                         String imageUrl = snapshot.child("profilepictureurl").getValue().toString();
                         Glide.with(getApplicationContext()).load(imageUrl).into(nav_user_image);
-                    }else {
+                    } else {
                         nav_user_image.setImageResource(R.drawable.profile);
                     }
 
                     Menu nav_menu = navigationView.getMenu();
 
-                    if (type.equals("donor")){
+                    if (type.equals("donor")) {
                         nav_menu.findItem(R.id.sendEmail).setTitle("Received Emails");
                         nav_menu.findItem(R.id.notification).setVisible(true);
                     }
@@ -172,14 +172,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 userList.clear();
-                for (DataSnapshot dataSnapshot : snapshot.getChildren()){
+                for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
                     User user = dataSnapshot.getValue(User.class);
                     userList.add(user);
                 }
                 userAdapter.notifyDataSetChanged();
                 progressbar.setVisibility(View.GONE);
 
-                if (userList.isEmpty()){
+                if (userList.isEmpty()) {
                     Toast.makeText(MainActivity.this, "No recipients", Toast.LENGTH_SHORT).show();
                     progressbar.setVisibility(View.GONE);
                 }
@@ -200,14 +200,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 userList.clear();
-                for (DataSnapshot dataSnapshot : snapshot.getChildren()){
+                for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
                     User user = dataSnapshot.getValue(User.class);
                     userList.add(user);
                 }
                 userAdapter.notifyDataSetChanged();
                 progressbar.setVisibility(View.GONE);
 
-                if (userList.isEmpty()){
+                if (userList.isEmpty()) {
                     Toast.makeText(MainActivity.this, "No recipients", Toast.LENGTH_SHORT).show();
                     progressbar.setVisibility(View.GONE);
                 }
@@ -221,16 +221,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
 
-
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         Intent intent;
         switch (item.getItemId()) {
 
             case R.id.aplus:
-               intent = new Intent(MainActivity.this, CategorySelectedActivity.class);
-               intent.putExtra("group", "A+");
-               startActivity(intent);
+                intent = new Intent(MainActivity.this, CategorySelectedActivity.class);
+                intent.putExtra("group", "A+");
+                startActivity(intent);
                 break;
 
             case R.id.aminus:
@@ -293,7 +292,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
 
             case R.id.profile:
-                startActivity(new Intent(MainActivity.this,ProfileActivity.class));
+                startActivity(new Intent(MainActivity.this, ProfileActivity.class));
                 break;
 
             case R.id.logout:

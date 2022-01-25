@@ -4,17 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="20dp"
     android:background="@color/background"
     android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="20dp"
     tools:context=".SplashScreen">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center_vertical"
         android:background="#fff"
+        android:gravity="center_vertical"
         android:orientation="vertical">
 
         <ImageView
@@ -23,7 +23,7 @@
             android:layout_height="150dp"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            android:src="@drawable/appicon"/>
+            android:src="@drawable/appicon" />
 
         <TextView
             android:id="@+id/title"

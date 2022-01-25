@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.drawerlayout.widget.DrawerLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/drawerLayout"
-    tools:openDrawer="start"
     android:background="@color/white"
     android:fitsSystemWindows="true"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:openDrawer="start">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,24 +17,24 @@
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toobar"
-            android:elevation="4dp"
-            android:gravity="center"
-            android:layout_gravity="center"
-            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/background">
+            android:layout_gravity="center"
+            android:background="@color/background"
+            android:elevation="4dp"
+            android:gravity="center"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Dark">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Blood Donation App"
-                android:textStyle="bold"
                 android:layout_gravity="center"
-                android:textColor="@color/white"
                 android:gravity="center"
-                android:textSize="20sp"/>
+                android:text="Blood Donation App"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
         </androidx.appcompat.widget.Toolbar>
 
@@ -47,12 +46,12 @@
                 android:id="@+id/progressbar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical|center_horizontal"/>
+                android:layout_gravity="center_vertical|center_horizontal" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerView"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
+                android:layout_height="match_parent" />
 
         </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
@@ -61,12 +60,12 @@
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigationView"
         android:layout_width="wrap_content"
-        app:headerLayout="@layout/navigation_head"
+        android:layout_height="wrap_content"
         android:layout_gravity="start"
-        app:menu="@menu/menu"
+        app:headerLayout="@layout/navigation_head"
         app:itemIconTint="@color/background"
         app:itemTextColor="@color/menuitemTextcolor"
-        android:layout_height="wrap_content">
+        app:menu="@menu/menu">
 
     </com.google.android.material.navigation.NavigationView>
 

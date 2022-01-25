@@ -63,7 +63,7 @@ public class SentemailActivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 idList.clear();
-                for (DataSnapshot dataSnapshot : snapshot.getChildren()){
+                for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
                     idList.add(dataSnapshot.getKey());
                 }
 
@@ -83,11 +83,11 @@ public class SentemailActivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 userList.clear();
-                for (DataSnapshot dataSnapshot : snapshot.getChildren()){
+                for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
                     User user = dataSnapshot.getValue(User.class);
 
-                    for (String id : idList){
-                        if (user.getId().equals(id)){
+                    for (String id : idList) {
+                        if (user.getId().equals(id)) {
                             userList.add(user);
                         }
                     }
@@ -106,10 +106,10 @@ public class SentemailActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
             case android.R.id.home:
                 finish();
-                return  true;
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }

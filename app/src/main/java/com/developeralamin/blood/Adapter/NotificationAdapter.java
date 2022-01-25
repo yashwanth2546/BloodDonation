@@ -23,7 +23,7 @@ import java.util.List;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class NotificationAdapter  extends  RecyclerView.Adapter<NotificationAdapter.ViewHolder>{
+public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapter.ViewHolder> {
 
     private Context context;
     private List<Notification> notificationList;
@@ -36,13 +36,13 @@ public class NotificationAdapter  extends  RecyclerView.Adapter<NotificationAdap
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(context).inflate(R.layout.notification_item, parent,false);
+        View view = LayoutInflater.from(context).inflate(R.layout.notification_item, parent, false);
         return new ViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        final  Notification notification = notificationList.get(position);
+        final Notification notification = notificationList.get(position);
 
         holder.notification_text.setText(notification.getText());
         holder.notification_date.setText(notification.getDate());
@@ -52,13 +52,12 @@ public class NotificationAdapter  extends  RecyclerView.Adapter<NotificationAdap
     }
 
 
-
     @Override
     public int getItemCount() {
         return notificationList.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder{
+    public class ViewHolder extends RecyclerView.ViewHolder {
 
         public CircleImageView notification_profile_image;
         public TextView notification_name, notification_text, notification_date;

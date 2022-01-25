@@ -4,16 +4,16 @@
     <item
         android:id="@+id/home"
         android:icon="@drawable/ic_baseline_home_24"
-        android:title="Home"/>
+        android:title="Home" />
 
     <item
         android:id="@+id/sendEmail"
         android:icon="@drawable/ic_baseline_verified_24"
-        android:title="Donor's Eamil"/>
+        android:title="Donor's Eamil" />
     <item
         android:id="@+id/compatible"
         android:icon="@drawable/compatible"
-        android:title="Compatible"/>
+        android:title="Compatible" />
 
     <item android:title="Blood Groups">
 
@@ -22,39 +22,39 @@
                 <item
                     android:id="@+id/aplus"
                     android:icon="@drawable/aplus"
-                    android:title="A+ positive"/>
+                    android:title="A+ positive" />
                 <item
                     android:id="@+id/aminus"
                     android:icon="@drawable/aminus"
-                    android:title="A- negative"/>
+                    android:title="A- negative" />
 
                 <item
                     android:id="@+id/bplus"
                     android:icon="@drawable/bplus"
-                    android:title="B+ positive"/>
+                    android:title="B+ positive" />
                 <item
                     android:id="@+id/bminus"
                     android:icon="@drawable/bminus"
-                    android:title="B- negative"/>
+                    android:title="B- negative" />
 
                 <item
                     android:id="@+id/abplus"
                     android:icon="@drawable/abplus"
-                    android:title="AB+ positive"/>
+                    android:title="AB+ positive" />
                 <item
                     android:id="@+id/abminus"
                     android:icon="@drawable/abminus"
-                    android:title="AB- negative"/>
+                    android:title="AB- negative" />
 
                 <item
                     android:id="@+id/oplus"
                     android:icon="@drawable/oplus"
-                    android:title="O+ positive"/>
+                    android:title="O+ positive" />
 
                 <item
                     android:id="@+id/ominus"
                     android:icon="@drawable/ominus"
-                    android:title="O- negative"/>
+                    android:title="O- negative" />
             </group>
         </menu>
     </item>
@@ -66,17 +66,17 @@
                 <item
                     android:id="@+id/profile"
                     android:icon="@drawable/ic_person"
-                    android:title="Profile"/>
+                    android:title="Profile" />
                 <item
                     android:id="@+id/notification"
-                    android:visible="false"
                     android:icon="@drawable/ic_baseline_notifications_none_24"
-                    android:title="Notification"/>
+                    android:title="Notification"
+                    android:visible="false" />
 
                 <item
                     android:id="@+id/logout"
                     android:icon="@drawable/ic_logout"
-                    android:title="Log Out"/>
+                    android:title="Log Out" />
 
             </group>
 
@@ -90,11 +90,11 @@
                 <item
                     android:id="@+id/about"
                     android:icon="@drawable/ic_about"
-                    android:title="About"/>
+                    android:title="About" />
                 <item
                     android:id="@+id/share"
                     android:icon="@drawable/ic_baseline_share_24"
-                    android:title="Share"/>
+                    android:title="Share" />
 
 
             </group>

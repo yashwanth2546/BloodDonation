@@ -20,7 +20,7 @@ import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
-public class JavaMailApi  extends AsyncTask<Void, Void, Void> {
+public class JavaMailApi extends AsyncTask<Void, Void, Void> {
 
     private Context context;
     private Session session;
@@ -88,7 +88,7 @@ public class JavaMailApi  extends AsyncTask<Void, Void, Void> {
         View myView = inflater.inflate(R.layout.output_layout, null);
         myDialog.setView(myView);
 
-        final  AlertDialog dialog = myDialog.create();
+        final AlertDialog dialog = myDialog.create();
         dialog.setCancelable(false);
 
         Button closeButton = myView.findViewById(R.id.closeButton);

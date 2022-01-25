@@ -15,9 +15,9 @@ import com.developeralamin.blood.auth.LoginActivity;
 public class SplashScreen extends AppCompatActivity {
 
     private ImageView logo;
-    private TextView title,slogan;
+    private TextView title, slogan;
 
-    Animation topAnimation,bottomAnimation;
+    Animation topAnimation, bottomAnimation;
 
 
     @Override
@@ -29,8 +29,8 @@ public class SplashScreen extends AppCompatActivity {
         title = findViewById(R.id.title);
         slogan = findViewById(R.id.slogan);
 
-        topAnimation = AnimationUtils.loadAnimation(this,R.anim.to_animation);
-        bottomAnimation = AnimationUtils.loadAnimation(this,R.anim.bottom_animation);
+        topAnimation = AnimationUtils.loadAnimation(this, R.anim.to_animation);
+        bottomAnimation = AnimationUtils.loadAnimation(this, R.anim.bottom_animation);
 
         logo.setAnimation(topAnimation);
         title.setAnimation(bottomAnimation);
@@ -42,6 +42,6 @@ public class SplashScreen extends AppCompatActivity {
                 startActivity(new Intent(SplashScreen.this, LoginActivity.class));
                 finish();
             }
-        },4000);
+        }, 4000);
     }
 }

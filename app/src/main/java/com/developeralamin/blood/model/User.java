@@ -1,7 +1,7 @@
 package com.developeralamin.blood.model;
 
 public class User {
-    String name, bloodgroup, id, email, idnumber, phonenumber,profilepictureurl,search,type;
+    String name, bloodgroup, id, email, idnumber, phonenumber, profilepictureurl, search, type;
 
     public User() {
     }

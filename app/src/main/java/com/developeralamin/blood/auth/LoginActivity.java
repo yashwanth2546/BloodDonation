@@ -23,10 +23,10 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class LoginActivity extends AppCompatActivity {
 
-    private TextInputEditText inputEmail,inputPassword;
+    private TextInputEditText inputEmail, inputPassword;
 
     Button loginButton;
-    TextView forgotPassword,backButton;
+    TextView forgotPassword, backButton;
 
     private FirebaseAuth auth;
 
@@ -44,7 +44,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 FirebaseUser user = auth.getCurrentUser();
-                if (user !=null){
+                if (user != null) {
                     Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                     startActivity(intent);
                     finish();
@@ -53,14 +53,12 @@ public class LoginActivity extends AppCompatActivity {
         };
 
 
-
         inputEmail = findViewById(R.id.inputEmail);
         inputPassword = findViewById(R.id.inputPassword);
         forgotPassword = findViewById(R.id.forgotPassword);
 
         loginButton = findViewById(R.id.loginButton);
         backButton = findViewById(R.id.backButton);
-
 
 
         progressDialog = new ProgressDialog(this);
@@ -76,7 +74,7 @@ public class LoginActivity extends AppCompatActivity {
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(LoginActivity.this,RegisterActivity.class));
+                startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
                 finish();
             }
         });
@@ -88,32 +86,33 @@ public class LoginActivity extends AppCompatActivity {
         String email = inputEmail.getText().toString();
         String password = inputPassword.getText().toString();
 
-        if (email.isEmpty()){
+        if (email.isEmpty()) {
             inputEmail.setError("Enter Your Email");
             inputEmail.requestFocus();
             return;
-        }if (password.isEmpty()){
+        }
+        if (password.isEmpty()) {
             inputPassword.setError("Enter Your Password");
             inputPassword.requestFocus();
             return;
-        }else {
+        } else {
             progressDialog.setMessage("Login....................");
             progressDialog.setCanceledOnTouchOutside(false);
             progressDialog.show();
 
-            auth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+            auth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
-                   if (task.isSuccessful()){
-                       Toast.makeText(getApplicationContext(), "Log in successful", Toast.LENGTH_SHORT).show();
-                       Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                       startActivity(intent);
-                       finish();
-                   }else {
-                       Toast.makeText(getApplicationContext(), task.getException().toString(), Toast.LENGTH_SHORT).show();
-                   }
+                    if (task.isSuccessful()) {
+                        Toast.makeText(getApplicationContext(), "Log in successful", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                        startActivity(intent);
+                        finish();
+                    } else {
+                        Toast.makeText(getApplicationContext(), task.getException().toString(), Toast.LENGTH_SHORT).show();
+                    }
 
-                   progressDialog.dismiss();
+                    progressDialog.dismiss();
                 }
             });
         }
@@ -135,9 +134,9 @@ public class LoginActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
 
-        if (FirebaseAuth.getInstance().getCurrentUser()!=null){
+        if (FirebaseAuth.getInstance().getCurrentUser() != null) {
             Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(intent);
         }
     }
