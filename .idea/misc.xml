@@ -12,7 +12,7 @@
         <entry key="app/src/main/res/drawable/navigation_view_item_selected.xml" value="0.2234375" />
         <entry key="app/src/main/res/layout/activity_category_selected.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_donor_registration.xml" value="0.18" />
-        <entry key="app/src/main/res/layout/activity_login.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.6597510373443983" />
         <entry key="app/src/main/res/layout/activity_notifications.xml" value="0.16893115942028986" />
         <entry key="app/src/main/res/layout/activity_profile.xml" value="0.18" />
