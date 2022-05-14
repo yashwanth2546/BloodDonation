@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.developeralamin.blood">
+    package="com.example.blood">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -12,40 +12,40 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Blood">
         <activity
-            android:name=".notification.NotificationsActivity"
+            android:name="com.example.blood.notification.NotificationsActivity"
             android:exported="true" />
         <activity
-            android:name=".email.SentemailActivity"
+            android:name="com.example.blood.email.SentemailActivity"
             android:exported="true" />
         <activity
-            android:name=".group.CategorySelectedActivity"
+            android:name="com.example.blood.group.CategorySelectedActivity"
             android:exported="true" />
         <activity
-            android:name=".profile.ProfileActivity"
+            android:name="com.example.blood.profile.ProfileActivity"
             android:exported="true"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".auth.RecipientRegistrationActivity"
+            android:name="com.example.blood.auth.RecipientRegistrationActivity"
             android:exported="true"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".auth.DonorRegistrationActivity"
+            android:name="com.example.blood.auth.DonorRegistrationActivity"
             android:exported="true"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".auth.RegisterActivity"
+            android:name="com.example.blood.auth.RegisterActivity"
             android:exported="true"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".auth.LoginActivity"
+            android:name="com.example.blood.auth.LoginActivity"
             android:exported="true"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.blood.MainActivity"
             android:exported="true"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".SplashScreen"
+            android:name="com.example.blood.SplashScreen"
             android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>

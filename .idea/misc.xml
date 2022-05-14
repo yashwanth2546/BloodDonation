@@ -3,29 +3,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="app/src/main/res/drawable/button_background.xml" value="0.1" />
-        <entry key="app/src/main/res/drawable/header_background.xml" value="0.10555555555555556" />
-        <entry key="app/src/main/res/drawable/ic_about.xml" value="0.1" />
-        <entry key="app/src/main/res/drawable/ic_logout.xml" value="0.1" />
-        <entry key="app/src/main/res/drawable/ic_myfeed.xml" value="0.18333333333333332" />
-        <entry key="app/src/main/res/drawable/navigation_selector.xml" value="0.2234375" />
-        <entry key="app/src/main/res/drawable/navigation_view_item_selected.xml" value="0.2234375" />
-        <entry key="app/src/main/res/layout/activity_category_selected.xml" value="0.22" />
-        <entry key="app/src/main/res/layout/activity_donor_registration.xml" value="0.18" />
-        <entry key="app/src/main/res/layout/activity_login.xml" value="0.22" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.6597510373443983" />
-        <entry key="app/src/main/res/layout/activity_notifications.xml" value="0.16893115942028986" />
-        <entry key="app/src/main/res/layout/activity_profile.xml" value="0.18" />
-        <entry key="app/src/main/res/layout/activity_recipient_registration.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_register.xml" value="0.5" />
-        <entry key="app/src/main/res/layout/activity_sendemail.xml" value="0.1213768115942029" />
-        <entry key="app/src/main/res/layout/activity_sentemail.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.22" />
-        <entry key="app/src/main/res/layout/navigation_head.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/notification_item.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/output_layout.xml" value="0.1213768115942029" />
-        <entry key="app/src/main/res/layout/user_display_layout.xml" value="0.1" />
-        <entry key="app/src/main/res/menu/menu.xml" value="0.5" />
+        <entry key="..\:/Users/yashwanth/AndroidStudioProjects/BloodDonation/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.2265" />
+        <entry key="..\:/Users/yashwanth/AndroidStudioProjects/BloodDonation/app/src/main/res/drawable/ic_baseline_share_24.xml" value="0.2265" />
+        <entry key="..\:/Users/yashwanth/AndroidStudioProjects/BloodDonation/app/src/main/res/layout/activity_category_selected.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/yashwanth/AndroidStudioProjects/BloodDonation/app/src/main/res/layout/activity_donor_registration.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/yashwanth/AndroidStudioProjects/BloodDonation/app/src/main/res/layout/activity_login.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/yashwanth/AndroidStudioProjects/BloodDonation/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/yashwanth/AndroidStudioProjects/BloodDonation/app/src/main/res/layout/activity_notifications.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/yashwanth/AndroidStudioProjects/BloodDonation/app/src/main/res/layout/activity_profile.xml" value="0.25" />
+        <entry key="..\:/Users/yashwanth/AndroidStudioProjects/BloodDonation/app/src/main/res/layout/activity_recipient_registration.xml" value="0.25" />
+        <entry key="..\:/Users/yashwanth/AndroidStudioProjects/BloodDonation/app/src/main/res/layout/activity_register.xml" value="0.25" />
+        <entry key="..\:/Users/yashwanth/AndroidStudioProjects/BloodDonation/app/src/main/res/layout/activity_sentemail.xml" value="0.25" />
+        <entry key="..\:/Users/yashwanth/AndroidStudioProjects/BloodDonation/app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
+        <entry key="..\:/Users/yashwanth/AndroidStudioProjects/BloodDonation/app/src/main/res/layout/navigation_head.xml" value="0.25" />
+        <entry key="..\:/Users/yashwanth/AndroidStudioProjects/BloodDonation/app/src/main/res/layout/notification_item.xml" value="0.25" />
+        <entry key="..\:/Users/yashwanth/AndroidStudioProjects/BloodDonation/app/src/main/res/layout/output_layout.xml" value="0.25" />
+        <entry key="..\:/Users/yashwanth/AndroidStudioProjects/BloodDonation/app/src/main/res/layout/user_display_layout.xml" value="0.25" />
+        <entry key="..\:/Users/yashwanth/AndroidStudioProjects/BloodDonation/app/src/main/res/menu/menu.xml" value="0.25" />
       </map>
     </option>
   </component>
